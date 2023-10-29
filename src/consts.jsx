@@ -1,54 +1,53 @@
-import HomeIcon from "./assets/icons/home.svg";
-import ProfileIcon from "./assets/icons/profile.svg";
-import PinProfileIcon from "./assets/icons/pinprofile.svg";
-import GroupIcon from "./assets/icons/group.svg";
-import CityIcon from "./assets/icons/city.svg";
-import StackIcon from "./assets/icons/stack.svg";
-import MessageIcon from "./assets/icons/message.svg";
-import GearIcon from "./assets/icons/gear.svg";
-
+import HomeIcon from "./assets/icons/home.jsx";
+import ProfileIcon from "./assets/icons/profile.jsx";
+import PinProfileIcon from "./assets/icons/pinprofile.jsx";
+import GroupIcon from "./assets/icons/group.jsx";
+import CityIcon from "./assets/icons/city.jsx";
+import StackIcon from "./assets/icons/stack.jsx";
+import MessageIcon from "./assets/icons/message.jsx";
+import GearIcon from "./assets/icons/gear.jsx";
 
 
 
 export const SIDE_BAR = [
     {
         title : "Dashboard",
-        icon : HomeIcon,
+        icon : <HomeIcon/>,
         active: false
     },
     {
         title : "Sub Admin",
-        icon : ProfileIcon,
+        icon : <ProfileIcon/>,
         active: true
     },
     {
         title : "Expert",
-        icon : PinProfileIcon,
+        icon : <PinProfileIcon/>,
         active: false
     },
     {
         title : "Customers",
-        icon : GroupIcon,
+        icon : <GroupIcon/>,
         active: false
     },
     {
         title : "Countries",
-        icon : CityIcon,
+        icon : <CityIcon/>,
         active: false
     },
     {
         title : "Categories",
-        icon : StackIcon,
+        icon : <StackIcon/>,
         active: false
     },
     {
         title : "Messages",
-        icon : MessageIcon,
+        icon : <MessageIcon/>,
         active: false
     },
     {
         title : "Settings",
-        icon : GearIcon,
+        icon : <GearIcon/>,
         active: false
     }
 ]

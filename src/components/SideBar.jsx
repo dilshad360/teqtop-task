@@ -15,13 +15,14 @@ function SideBar() {
                         variant="text"
                         className={` ${item.active ? "bg-[#266065]" : ""}`}
                     >
-                        <img src={item.icon} alt="" />
+                        {item.icon}
                     </IconButton>
                     <Typography variant="small" className="font-semibold pt-1">
                         {item.title}
                     </Typography>
                 </div>
             ))}
+            
         </Card>
     );
 }

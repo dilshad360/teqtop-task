@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import SideBar from "./components/SideBar";
 import { Button, Typography } from "@material-tailwind/react";
 
-import LeftIcon from "./assets/icons/leftarrow.svg";
+import LeftIcon from "./assets/icons/leftArrow.jsx";
 import RightIcon from "./assets/icons/rightArrow.jsx";
 
 import Table from "./components/Table";
@@ -65,7 +65,7 @@ function App() {
           </Typography>
           <div className="flex gap-2">
             <Button size="sm" onClick={prevPage} variant="text">
-              <img src={LeftIcon} alt="" />
+              <LeftIcon/>
             </Button>
 
             {/* Map over the range of page numbers to display */}

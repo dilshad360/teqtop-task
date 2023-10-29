@@ -1,6 +1,6 @@
 import { Avatar, IconButton, Typography } from "@material-tailwind/react"
-import PlusIcon from "../assets/icons/plus.svg";
-import BellIcon from "../assets/icons/bell.svg";
+import PlusIcon from "../assets/icons/plus.jsx";
+import BellIcon from "../assets/icons/bell.jsx";
 import Logo from "../assets/logo.png"
 import UserImage from "../assets/user.png"
 
@@ -14,11 +14,11 @@ function Nav() {
             </div>
             <div className="flex gap-2 items-center">
                 <IconButton className="rounded-full" color="light-green">
-                    <img src={PlusIcon} alt="" />
+                    <PlusIcon/>
                 </IconButton>
                 <div className="w-0.5 h-6 bg-black opacity-10 mx-1"></div>
                 <IconButton className="rounded-full bg-[#F2F2F2]" >
-                    <img src={BellIcon} alt="" />
+                    <BellIcon/>
                 </IconButton>
                 <Avatar src={UserImage} size="md"></Avatar>
             </div>

@@ -15,12 +15,12 @@ import { useState } from "react";
 import Filter from "../components/drawers/Filter";
 import AddNew from "../components/drawers/AddNew";
 
-import ViewIcon from "../assets/icons/eye.svg";
-import EditIcon from "../assets/icons/pencil.svg";
-import DeleteIcon from "../assets/icons/bin.svg";
-import AddIcon from "../assets/icons/plus.svg";
-import FilterIcon from "../assets/icons/filter.svg";
-import SearchIcon from "../assets/icons/search.svg";
+import ViewIcon from "../assets/icons/eye.jsx";
+import EditIcon from "../assets/icons/pencil.jsx";
+import DeleteIcon from "../assets/icons/bin.jsx";
+import AddIcon from "../assets/icons/plus.jsx";
+import FilterIcon from "../assets/icons/filter.jsx";
+import SearchIcon from "../assets/icons/search.jsx";
 
 function Table({ data }) {
     const [openFilter, setOpenFilter] = useState(false);
@@ -56,7 +56,7 @@ function Table({ data }) {
                             <Input
                                 label="Search by name"
                                 variant="standard"
-                                icon={<img src={SearchIcon} alt="" />}
+                                icon={<SearchIcon/>}
                             />
                         </div>
                         <Button
@@ -64,7 +64,7 @@ function Table({ data }) {
                             className="bg-[#17494D] flex items-center gap-2"
                             onClick={openDrawer("Filter")}
                         >
-                            <img src={FilterIcon} alt="" />
+                            <FilterIcon/>
                             Filter
                         </Button>
                         <Button
@@ -73,7 +73,7 @@ function Table({ data }) {
                             className="flex items-center gap-2"
                             onClick={openDrawer("AddNew")}
                         >
-                            <img src={AddIcon} alt=""></img>Add New
+                            <AddIcon/>Add New
                         </Button>
                     </div>
                 </CardHeader>
@@ -168,17 +168,17 @@ function Table({ data }) {
                                                         size="sm"
                                                         color="yellow"
                                                     >
-                                                        <img src={ViewIcon} alt="" />
+                                                        <ViewIcon />
                                                     </IconButton>
                                                     <IconButton
                                                         variant="outlined"
                                                         size="sm"
                                                         color="light-green"
                                                     >
-                                                        <img src={EditIcon} alt="" />
+                                                        <EditIcon />
                                                     </IconButton>
                                                     <IconButton variant="outlined" size="sm" color="red">
-                                                        <img src={DeleteIcon} alt="" />
+                                                        <DeleteIcon />
                                                     </IconButton>
                                                 </div>
                                             </td>

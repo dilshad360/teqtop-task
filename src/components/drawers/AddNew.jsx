@@ -9,8 +9,8 @@ import {
 } from "@material-tailwind/react";
 import PropTypes from "prop-types";
 
-import ProfileImage from "../../assets/no-profile.svg";
-import UploadIcon from "../../assets/icons/upload.svg"
+import ProfileImage from "../../assets/noProfile.jsx";
+import UploadIcon from "../../assets/icons/upload.jsx"
 
 function AddNew({ open, setOpen }) {
 
@@ -44,9 +44,9 @@ function AddNew({ open, setOpen }) {
                 </IconButton>
             </div>
             <div className="p-6 flex items-center gap-1">
-                <img src={ProfileImage} alt="" />
+                <ProfileImage/>
                 <Button className="flex items-center gap-2" variant="text" color="light-green" size="sm">
-                    <img src={UploadIcon} alt="" />
+                    <UploadIcon/>
                     Upload Photo
                 </Button>
             </div>
