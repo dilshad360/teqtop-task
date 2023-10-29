@@ -3,7 +3,7 @@ import SideBar from "./components/SideBar";
 import { Button, Typography } from "@material-tailwind/react";
 
 import LeftIcon from "./assets/icons/leftarrow.svg";
-import RightIcon from "./assets/icons/rightarrow.svg";
+import RightIcon from "./assets/icons/rightArrow.jsx";
 
 import Table from "./components/Table";
 
@@ -86,7 +86,7 @@ function App() {
             ))}
 
             <Button size="sm" onClick={nextPage} variant="text">
-              <img src={RightIcon} alt="" />
+              <RightIcon/>
             </Button>
           </div>
         </div>
