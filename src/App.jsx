@@ -8,6 +8,7 @@ import RightIcon from "./assets/icons/rightarrow.svg";
 import Table from "./components/Table";
 
 function App() {
+  
   const [data, setData] = useState(null);
 
   const [page, setPage] = useState(1);
@@ -23,6 +24,11 @@ function App() {
       setPage(page - 1);
     }
   };
+
+  const totalPages = data ? Math.ceil(data.total_users / limit) : 1;
+  const maxPagesToShow = 4;
+  const startPage = Math.max(1, page - 1);
+  const endPage = Math.min(startPage + maxPagesToShow - 1, totalPages);
 
   useEffect(() => {
     async function fetchData() {
@@ -49,6 +55,7 @@ function App() {
       <SideBar />
 
       <div className="w-full my-8 mx-7">
+
         <Table data={data} />
 
         <div className="flex items-center justify-between">
@@ -60,6 +67,23 @@ function App() {
             <Button size="sm" onClick={prevPage} variant="text">
               <img src={LeftIcon} alt="" />
             </Button>
+
+            {/* Map over the range of page numbers to display */}
+            {Array.from({ length: endPage - startPage + 1 }, (_, i) => (
+              <Button
+                key={startPage + i}
+                size="sm"
+                onClick={() => setPage(startPage + i)}
+                className={`${
+                  page === startPage + i
+                    ? "bg-[#8bc34a] text-white"
+                    : "text-gray-500"
+                }`}
+                variant="text"
+              >
+                {startPage + i}
+              </Button>
+            ))}
 
             <Button size="sm" onClick={nextPage} variant="text">
               <img src={RightIcon} alt="" />
