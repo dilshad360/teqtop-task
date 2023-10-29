@@ -54,4 +54,4 @@ export const SIDE_BAR = [
 ]
 
 
-export const TABLE_HEAD = ["Name", "Email", "Phone", "Gender", "Country", "Date of Birth", "Action"];
+export const TABLE_HEAD = ["Name", "Email", "Phone", "Country", "Date of Birth", "Action"];

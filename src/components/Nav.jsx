@@ -7,7 +7,6 @@ import UserImage from "../assets/user.png"
 
 function Nav() {
     return (
-
         <div className="flex w-full items-center border-2 pr-8 py-1  justify-between shadow-xl">
             <div className="flex items-center">
                 <img className="" src={Logo} alt="" />
@@ -17,6 +16,7 @@ function Nav() {
                 <IconButton className="rounded-full" color="light-green">
                     <img src={PlusIcon} alt="" />
                 </IconButton>
+                <div className="w-0.5 h-6 bg-black opacity-10 mx-1"></div>
                 <IconButton className="rounded-full bg-[#F2F2F2]" >
                     <img src={BellIcon} alt="" />
                 </IconButton>

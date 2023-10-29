@@ -72,7 +72,7 @@ function Filter({ open, setOpen }) {
 
 Filter.propTypes = {
     open: PropTypes.bool,
-    setOpen: PropTypes.bool
+    setOpen: PropTypes.func
 }
 
 

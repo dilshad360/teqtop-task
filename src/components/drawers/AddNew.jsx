@@ -13,6 +13,7 @@ import ProfileImage from "../../assets/no-profile.svg";
 import UploadIcon from "../../assets/icons/upload.svg"
 
 function AddNew({ open, setOpen }) {
+
     const closeDrawer = () => {
         document.body.style.overflow = "auto";
         setOpen(false);
@@ -87,7 +88,7 @@ function AddNew({ open, setOpen }) {
 
 AddNew.propTypes = {
     open: PropTypes.bool,
-    setOpen: PropTypes.bool,
+    setOpen: PropTypes.func,
 };
 
 export default AddNew;
